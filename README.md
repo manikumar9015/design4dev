@@ -1,4 +1,4 @@
-**Study-Together**
+Study-Together
 A collaborative study and resource-sharing platform built with React and Vite.
 
 Features
