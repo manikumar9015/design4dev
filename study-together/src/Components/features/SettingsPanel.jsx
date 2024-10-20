@@ -36,7 +36,7 @@ const SettingsPanel = () => {
                 type="number"
                 value={settings.focusTime}
                 onChange={(e) => updateSetting('focusTime', e.target.value)}
-                className="w-16 p-1 border rounded"
+                className="w-16 p-1 border rounded  placeholder:text-black text-black"
                 min="1"
                 max="60"
               />
@@ -47,7 +47,7 @@ const SettingsPanel = () => {
                 type="number"
                 value={settings.breakTime}
                 onChange={(e) => updateSetting('breakTime', e.target.value)}
-                className="w-16 p-1 border rounded"
+                className="w-16 p-1 border rounded placeholder:text-black text-black"
                 min="1"
                 max="30"
               />
@@ -69,10 +69,11 @@ const SettingsPanel = () => {
                   onChange={(e) => updateSetting('notifications', e.target.checked)}
                   className="sr-only peer"
                 />
-                <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-gradient-to-br from-pink-500 to-orange-400 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-gradient-to-br from-pink-500 to-orange-400"></div>
               </label>
             </div>
           </div>
+          
 
           {/* Sound Settings */}
           <div className="space-y-2">
@@ -89,7 +90,7 @@ const SettingsPanel = () => {
                   onChange={(e) => updateSetting('soundEnabled', e.target.checked)}
                   className="sr-only peer"
                 />
-                <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-gradient-to-br from-pink-500 to-orange-400 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-gradient-to-br from-pink-500 to-orange-400"></div>
               </label>
             </div>
           </div>
@@ -109,7 +110,7 @@ const SettingsPanel = () => {
                   onChange={(e) => updateSetting('darkMode', e.target.checked)}
                   className="sr-only peer"
                 />
-                <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-gradient-to-br from-pink-500 to-orange-400 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-gradient-to-br from-pink-500 to-orange-400"></div>
               </label>
             </div>
           </div>

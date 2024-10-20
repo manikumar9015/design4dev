@@ -67,7 +67,7 @@ const StudyPartner = () => {
                 {messages.map((message) => (
                   <div
                     key={message.id}
-                    className={`p-2 rounded-lg text-sm ${
+                    className={`p-2 rounded-lg text-sm bg-gradient-to-br from-pink-500 to-orange-400 ${
                       message.sender === 'you'
                         ? 'bg-blue-500 text-white ml-auto'
                         : 'bg-gray-100 dark:bg-gray-700'
@@ -112,7 +112,7 @@ const StudyPartner = () => {
           <Button
             onClick={findPartner}
             disabled={isSearching}
-            className="w-full"
+            className="w-full bg-gradient-to-br from-pink-500 to-orange-400"
           >
             {isSearching ? 'Searching...' : 'Start Matching'}
           </Button>
