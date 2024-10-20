@@ -1,26 +1,28 @@
 **Study-Together**
 A collaborative study and resource-sharing platform built with React and Vite.
 
-**Features**
+Features
 Share study materials
 Collaborative study sessions
 User-friendly UI
-
-**Prerequisites**
+Prerequisites
 Node.js (v14 or higher)
-npm 
-
-**Installation**
+npm
+Installation
+Install Vite globally:
 npm install -g vite
 
+Clone the repository:
 git clone https://github.com/manikumar9015/design4dev
 
+Navigate to the project directory:
 cd design4dev/study-together
 
+Install required dependencies:
 npm install react-type-animation
 npm install @canvasjs/react-charts
 
+Start the development server:
 npm run dev
 
-To open the app in your browser, press ctrl and  click on the link - 'http://localhost:3000'
-
+To open the app in your browser, press Ctrl and click on the link: http://localhost:5713
